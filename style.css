@@ -6,15 +6,15 @@
 }
 
 :root {
-    --bg: #fdf2ec;
-    --card-bg: #ffffff;
-    --heading: #4d3528;
-    --text: #7c6050;
-    --muted: #ab9080;
-    --primary: #d4845a;
-    --primary-light: #f5e0d4;
-    --badge-bg: #f5e0d4;
-    --border: #ecd8cc;
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --heading: #e2e8f0;
+    --text: #94a3b8;
+    --muted: #64748b;
+    --primary: #60a5fa;
+    --primary-light: #1e3a5f;
+    --badge-bg: #1e3a5f;
+    --border: #334155;
 }   
 
 body {

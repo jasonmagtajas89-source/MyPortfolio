@@ -47,3 +47,20 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Copy email to clipboard with animation
+const emailBtn = document.getElementById('email-btn');
+if (emailBtn) {
+    emailBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevents the page from jumping to the top
+        navigator.clipboard.writeText('jasonmagtajas89@gmail.com').then(() => {
+            const originalText = this.innerHTML;
+            this.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+            
+            // Revert back to original text after 2 seconds
+            setTimeout(() => {
+                this.innerHTML = originalText;
+            }, 2000);
+        });
+    });
+}

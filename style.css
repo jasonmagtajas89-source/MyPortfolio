@@ -6,11 +6,15 @@
 }
 
 :root {
-    --text: #1f2937;
-    --muted: #6b7280;
-    --bg: #f9fafb;
-    --primary: #3b82f6;
+    /* Easy on the eyes Slate/Indigo Theme */
+    --bg: #f8fafc;
     --card-bg: #ffffff;
+    --heading: #0f172a;
+    --text: #334155;
+    --muted: #64748b;
+    --primary: #4f46e5;
+    --primary-light: #e0e7ff;
+    --border: #e2e8f0;
 }
 
 body {
@@ -20,10 +24,9 @@ body {
     background-color: var(--bg);
 }
 
-/* Fixed Layout Container */
 .container {
     max-width: 650px;
-    margin: 60px auto; /* Centers the website properly */
+    margin: 60px auto;
     padding: 0 20px;
 }
 
@@ -34,11 +37,11 @@ body {
 }
 
 .avatar {
-    width: 150px; /* Reduced from 450px */
-    height: 150px;
-    border-radius: 50%; /* Makes the image a fun circle */
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
     cursor: pointer;
     margin: 0 auto 20px auto;
     display: block;
@@ -50,16 +53,14 @@ body {
 }
 
 .intro {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--text);
     margin: 0 auto;
     max-width: 500px;
 }
 
 .highlight {
-    background: linear-gradient(120deg, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
     font-weight: 700;
 }
 
@@ -72,31 +73,40 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--text);
+    color: var(--heading);
+    display: flex;
+    align-items: center;
 }
 
-/* Modern Cards for Experience/Projects */
+.icon {
+    color: var(--primary);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* Cards */
 .card {
     background: var(--card-bg);
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
     margin-bottom: 15px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 15px rgba(15, 23, 42, 0.08);
 }
 
 .card h3 {
     font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--heading);
 }
 
 .year {
@@ -106,10 +116,10 @@ body {
 }
 
 .badge {
-    background: #e0e7ff;
-    color: #4f46e5;
+    background: var(--primary-light);
+    color: var(--primary);
     font-size: 0.75rem;
-    padding: 3px 8px;
+    padding: 4px 10px;
     border-radius: 12px;
     font-weight: 600;
 }
@@ -119,7 +129,7 @@ body {
     color: var(--muted);
 }
 
-/* Skill Tags (Pills) */
+/* Skill Tags */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -127,37 +137,64 @@ body {
 }
 
 .skill-tag {
-    background: #f3f4f6;
-    color: #374151;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .skill-tag:hover {
-    background: #e5e7eb;
+    background: var(--bg);
+    border-color: var(--primary);
 }
 
-/* Connect Buttons */
+/* Footer & Buttons */
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    color: var(--heading);
+    margin-bottom: 1rem;
+}
+
 .links-container {
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 
 .btn {
     text-decoration: none;
-    background: var(--primary);
-    color: white;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--heading);
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 500;
-    transition: opacity 0.2s ease;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn i {
+    color: var(--primary);
 }
 
 .btn:hover {
-    opacity: 0.9;
+    border-color: var(--primary);
+    background: var(--bg);
+    transform: translateY(-1px);
 }
 
 /* Responsive */

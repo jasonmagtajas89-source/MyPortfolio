@@ -7,15 +7,15 @@
 
 :root {
     /* Calm Down Theme: Charcoal, Navy, White */
-    --bg: #f4f5f7;            /* Soft off-white for the main background */
+    --bg: #f7f5f0;            /* Soft off-white for the main background */
     --card-bg: #ffffff;       /* Crisp white for the cards */
-    --heading: #2d3748;       /* Deep Charcoal for high-contrast headings */
-    --text: #4a5568;          /* Medium Charcoal for readable text */
-    --muted: #718096;         /* Lighter gray for secondary text */
-    --primary: #1a365d;       /* Trustworthy Professional Navy */
-    --primary-light: #e6fffa; /* Very subtle tint for badges (optional, using light gray instead below) */
-    --badge-bg: #edf2f7;      /* Light gray for tags/badges */
-    --border: #e2e8f0;        /* Clean borders */
+    --heading: #4a443d;       /* Deep Charcoal for high-contrast headings */
+    --text: #6b655f;          /* Medium Charcoal for readable text */
+    --muted: #9e9892;         /* Lighter gray for secondary text */
+    --primary: #8fa88a;       /* Trustworthy Professional Navy */
+    --primary-light: #e8f0e6; /* Very subtle tint for badges (optional, using light gray instead below) */
+    --badge-bg: #e8f0e6;      /* Light gray for tags/badges */
+    --border: #e6e2d8;        /* Clean borders */
 }
 
 body {

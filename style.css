@@ -38,8 +38,8 @@ body {
 }
 
 .avatar {
-    width: 340px;
-    height: 340px;
+    width: 330px;
+    height: 330px;
     border-radius: 20px; /* Changed from 50% to create a smooth rounded square */
     object-fit: cover;
     box-shadow: 0 10px 25px rgba(45, 55, 72, 0.1);

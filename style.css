@@ -6,15 +6,16 @@
 }
 
 :root {
-    /* Easy on the eyes Slate/Indigo Theme */
-    --bg: #f8fafc;
-    --card-bg: #ffffff;
-    --heading: #0f172a;
-    --text: #334155;
-    --muted: #64748b;
-    --primary: #4f46e5;
-    --primary-light: #e0e7ff;
-    --border: #e2e8f0;
+    /* Calm Down Theme: Charcoal, Navy, White */
+    --bg: #f4f5f7;            /* Soft off-white for the main background */
+    --card-bg: #ffffff;       /* Crisp white for the cards */
+    --heading: #2d3748;       /* Deep Charcoal for high-contrast headings */
+    --text: #4a5568;          /* Medium Charcoal for readable text */
+    --muted: #718096;         /* Lighter gray for secondary text */
+    --primary: #1a365d;       /* Trustworthy Professional Navy */
+    --primary-light: #e6fffa; /* Very subtle tint for badges (optional, using light gray instead below) */
+    --badge-bg: #edf2f7;      /* Light gray for tags/badges */
+    --border: #e2e8f0;        /* Clean borders */
 }
 
 body {
@@ -39,9 +40,9 @@ body {
 .avatar {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
+    border-radius: 20px; /* Changed from 50% to create a smooth rounded square */
     object-fit: cover;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 25px rgba(45, 55, 72, 0.1);
     cursor: pointer;
     margin: 0 auto 20px auto;
     display: block;
@@ -89,7 +90,7 @@ body {
     background: var(--card-bg);
     padding: 22px;
     border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 2px 4px rgba(45, 55, 72, 0.04);
     margin-bottom: 15px;
     border: 1px solid var(--border);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -97,7 +98,7 @@ body {
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 15px rgba(45, 55, 72, 0.08);
 }
 
 .card h3 {
@@ -116,7 +117,7 @@ body {
 }
 
 .badge {
-    background: var(--primary-light);
+    background: var(--badge-bg);
     color: var(--primary);
     font-size: 0.75rem;
     padding: 4px 10px;
@@ -193,7 +194,7 @@ body {
 
 .btn:hover {
     border-color: var(--primary);
-    background: var(--bg);
+    background: var(--badge-bg);
     transform: translateY(-1px);
 }
 
